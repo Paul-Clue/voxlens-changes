@@ -1,10 +1,21 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+import ReactDOM from "react-dom";
+// import { Provider } from 'react-redux';
+// import { createStore } from 'redux';
+// import { devToolsEnhancer } from 'redux-devtools-extension';
+// import rootReducer from './reducers';
+// import Routes from './components/Routes';
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Routes />
+  </React.StrictMode>,
+  document.getElementById("root")
 );
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
