@@ -2,7 +2,7 @@ import React from "react";
 
 const ChartsJS = () => (
   <>
-    <div></div>
+    <div>Checking Checking</div>
   </>
 );
 
