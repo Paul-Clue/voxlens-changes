@@ -9,7 +9,7 @@ const Routess = () => (
     <div className="container mt-5">
       <div>
         <ul className="list-inline">
-          <li className="list-inline-item ms5">
+          <li className="list-inline-item ms-5">
             <Link className="chartjs fs-3" to="/ChartJS">
               Chart.js
             </Link>

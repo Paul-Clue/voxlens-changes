@@ -1,5 +1,6 @@
 import React from "react";
-import Chart from "chart.js/auto";
+import Canvas from "./Canvas";
+// import Chart from "chart.js/auto";
 
 const ChartsJS = () => {
   //   const ctx = document.getElementById("myChart");
@@ -39,18 +40,19 @@ const ChartsJS = () => {
   //       },
   //     },
   //   });
-
-  <>
-    <div className="col-8 offset-2 border border-danger my-5">
-      <div className="card">
-        <div className="card-body">
-          <h5>Testing VoxLens</h5>
-          <hr />
-          <canvas id="myChart" width="400" height="400"></canvas>
+  return (
+    <>
+      <div className="col-8 offset-2 border border-info border-1 my-5">
+        <div className="card">
+          <div className="card-body">
+            <h5>Testing VoxLens</h5>
+            <hr />
+            <Canvas />
+          </div>
         </div>
       </div>
-    </div>
-  </>;
+    </>
+  );
 };
 
 export default ChartsJS;
