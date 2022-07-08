@@ -9,6 +9,12 @@ function App() {
         <Link className="chartjs" to="/ChartJS">
           Chart.js
         </Link>
+        <Link className="chartjs" to="/ChartJS">
+          Chart.js
+        </Link>
+        <Link className="chartjs" to="/ChartJS">
+          Chart.js
+        </Link>
       </div>
     </>
   );

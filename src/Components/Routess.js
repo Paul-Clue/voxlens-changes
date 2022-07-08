@@ -1,18 +1,35 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import App from "../App";
-import ChartJS from "../Components/ChartJS";
+import ChartJS from "./ChartJS";
 // import D3 from "../Components/D3";
 
 const Routess = () => (
   <>
-    <div>
-      <p>What is going on</p>
+    <div className="container mt-5">
+      <div>
+        <ul className="list-inline">
+          <li className="list-inline-item ms5">
+            <Link className="chartjs fs-3" to="/ChartJS">
+              Chart.js
+            </Link>
+          </li>
+          <li className="list-inline-item ms-5">
+            <Link className="chartjs fs-3" to="/D3">
+              D3
+            </Link>
+          </li>
+          <li className="list-inline-item ms-5">
+            <Link className="chartjs fs-3" to="/GoogleCharts">
+              Google Charts
+            </Link>
+          </li>
+        </ul>
+      </div>
       {/* <Nav /> */}
       <Routes>
         <Route path="/" element={<App />} />
         <Route exact path="/chartjs" element={<ChartJS />} />
-        {/* <Route exact path="/details/:name" component={Details} /> */}
         {/* <Route exact path ="" component ={D3}/> */}
         {/* <Route exact path ="" component ={GoogleCharts}/> */}
       </Routes>
