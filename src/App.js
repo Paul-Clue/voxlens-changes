@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <header className="App-header">This is the App!</header>
+        {/* <header className="App-header">This is the App!</header> */}
         <Link className="chartjs" to="/ChartJS">
           Chart.js
         </Link>
